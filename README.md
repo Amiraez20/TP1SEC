@@ -213,7 +213,7 @@ adb devices
 
 ### Démonstration — connexion ADB
 
-https://github.com/user-attachments/adbconnect.mp4
+adbconnect.mp4
 
 **Point de contrôle :** le device apparaît dans `adb devices` avec le statut `device`.
 

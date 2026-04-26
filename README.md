@@ -50,7 +50,7 @@ echo "Empreinte SHA256 : $computed_hash"
 
 ### Vérification du hash — capture d'écran
 
-![Vérification SHA256 sur PowerShell](assets/verifimg.png)
+![Vérification SHA256 sur PowerShell](verifimg.png)
 
 > Comparer la valeur obtenue avec l'empreinte publiée sur la page officielle. En l'absence d'empreinte de référence, conserver la valeur calculée pour traçabilité.
 
@@ -105,6 +105,13 @@ ip route show
 ping -c 3 8.8.8.8
 ping -c 3 google.com
 ```
+<img width="1919" height="897" alt="Capture d&#39;écran 2026-04-26 165506" src="https://github.com/user-attachments/assets/7319d75b-3f6a-4af1-b9bf-bb090fda6fc3" />
+
+<img width="1887" height="353" alt="Capture d&#39;écran 2026-04-26 165547" src="https://github.com/user-attachments/assets/64db3c61-c683-499f-bb03-d85f90f166e9" />
+
+<img width="1352" height="450" alt="Capture d&#39;écran 2026-04-26 165609" src="https://github.com/user-attachments/assets/1f9c0688-6dff-407c-9376-ca233469840d" />
+
+<img width="1911" height="524" alt="Capture d&#39;écran 2026-04-26 165639" src="https://github.com/user-attachments/assets/d23f670a-3c9d-4b87-abb9-59af6179208c" />
 
 **Interprétation des résultats :**
 
@@ -140,7 +147,7 @@ Description : Import OVA OK, NAT + HostOnly OK, boot réussi, prêt pour ADB
 
 ### Démonstration — création et restauration du snapshot
 
-https://github.com/user-attachments/assets/snapshotdemo.mp4
+https://github.com/user-attachments/snapshotdemo.mp4
 
 > Ce snapshot est le **point de restauration de référence**. À chaque TP modifiant le système (proxy, certificats, outils supplémentaires), une restauration remet l'environnement dans un état propre et reproductible.
 
@@ -206,7 +213,7 @@ adb devices
 
 ### Démonstration — connexion ADB
 
-https://github.com/user-attachments/assets/adbconnect.mp4
+https://github.com/user-attachments/adbconnect.mp4
 
 **Point de contrôle :** le device apparaît dans `adb devices` avec le statut `device`.
 
@@ -226,18 +233,3 @@ Documenter ces valeurs pour assurer la reproductibilité du lab :
 | Cible Android            | Option A (USB) ou B (émulateur) + ID/IP     |
 
 ---
-
-## Structure du dépôt
-
-```
-.
-├── README.md
-└── assets/
-    ├── verifimg.png        # Capture vérification SHA256 PowerShell
-    ├── adbconnect.mp4      # Démo connexion ADB
-    └── snapshotdemo.mp4    # Démo création et restauration snapshot
-```
-
----
-
-> **Bonne pratique :** toujours utiliser un appareil de test dédié. Certaines manipulations (proxy, certificats racine, débogage USB) modifient le comportement système et ne doivent pas être appliquées sur un téléphone personnel.

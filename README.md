@@ -147,7 +147,7 @@ Description : Import OVA OK, NAT + HostOnly OK, boot réussi, prêt pour ADB
 
 ### Démonstration — création et restauration du snapshot
 
-https://github.com/user-attachments/snapshotdemo.mp4
+* [🎬 Cliquer ici pour voir la démo du Snapshot (MP4)](snapshotdemo.mp4)
 
 > Ce snapshot est le **point de restauration de référence**. À chaque TP modifiant le système (proxy, certificats, outils supplémentaires), une restauration remet l'environnement dans un état propre et reproductible.
 
@@ -213,7 +213,7 @@ adb devices
 
 ### Démonstration — connexion ADB
 
-adbconnect.mp4
+* [🎬 Cliquer ici pour voir la démo de connexion ADB (MP4)](adbconnect.mp4)
 
 **Point de contrôle :** le device apparaît dans `adb devices` avec le statut `device`.
 
